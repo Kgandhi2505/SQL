@@ -1,0 +1,23 @@
+CREATE TABLE shoes (ID INTEGER PRIMARY KEY, SIZE INTEGER, BRAND TEXT, AISLE INTEGER, PRICE INTEGER, COLOR TEXT);
+
+INSERT INTO shoes Values (1,5,"NIKE", 2, 150, "BLUE"); 
+INSERT INTO shoes Values (2,6,"NIKE", 2, 200, "RED");
+INSERT INTO shoes Values (3,5,"NB", 3, 150, "BLUE"); 
+INSERT INTO shoes Values (4,6,"NB", 3, 200, "RED");
+INSERT INTO shoes Values (5,6,"NIKE", 2, 69, "Black");
+INSERT INTO shoes Values (6,6,"NIKE", 2, 200, "RED");
+INSERT INTO shoes Values (7,6,"Adidas", 1, 200, "RED");
+INSERT INTO shoes Values (8,6,"Adidas", 1, 150, "Black");
+INSERT INTO shoes Values (9,6,"Adidas", 1, 150, "Red");
+INSERT INTO shoes Values (10,5,"Adidas", 1, 150, "Black");
+INSERT INTO shoes Values (11,5,"Adidas", 1, 150, "Red");
+INSERT INTO shoes Values (12,4,"Adidas", 1, 150, "White");
+INSERT INTO shoes Values (13,4,"NIKE", 2, 150, "BLUE");
+INSERT INTO shoes Values (14,4,"NIKE", 2, 175, "BLUE");
+INSERT INTO shoes Values (15,4,"NIKE", 2, 225, "BLUE");
+
+SELECT SUM(PRICE) FROM shoes;
+
+SELECT * FROM shoes ORDER BY Aisle;
+
+SELECT * FROM shoes WHERE Price > 160 ORDER BY Aisle;
