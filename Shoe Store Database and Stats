@@ -16,8 +16,11 @@ INSERT INTO shoes Values (13,4,"NIKE", 2, 150, "BLUE");
 INSERT INTO shoes Values (14,4,"NIKE", 2, 175, "BLUE");
 INSERT INTO shoes Values (15,4,"NIKE", 2, 225, "BLUE");
 
+
+--display the total price
 SELECT SUM(PRICE) FROM shoes;
 
+-- --display the database ordered by Aisle
 SELECT * FROM shoes ORDER BY Aisle;
-
+--display the database where is the shoe price is over 160 order by aisle 
 SELECT * FROM shoes WHERE Price > 160 ORDER BY Aisle;
